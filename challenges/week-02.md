@@ -1,27 +1,28 @@
-# Week 2 — Apache Kafka
+# Week 2 — Messaging Fundamentals
 
-Producers write events to topics. Consumers read those events. Brokers retain events so they can be replayed.
+The goal is not code yet. Understand why messaging exists. Submit as a pull request, same as Week 1.
 
-## Required exercise
+## Topics
 
-Start Kafka (Docker is recommended), create a topic, send messages, consume them, stop the consumer, produce additional messages, restart the consumer, and observe what happens.
+Synchronous vs asynchronous, producers, consumers, messages/events, queues, topics, brokers, pub/sub, acknowledgement, retries, dead-letter queues, ordering, idempotency.
 
-Event:
+## Assignment
 
-```json
-{
-  "eventType": "EngineeringQuestionSubmitted",
-  "question": "What does this error mean?",
-  "timestamp": "..."
-}
+Draw this architecture, then answer: what happens if Consumer B is unavailable when the producer sends the message?
+
 ```
-
-Local broker:
-
-```bash
-docker compose --profile kafka up
+Application A
+      |
+      v
+ Message Broker
+      |
+  +---+---+
+  |       |
+  v       v
+Consumer Consumer
+   A         B
 ```
 
 ## Submit
 
-Copy `submissions/week-02/TEMPLATE.md` to `submissions/week-02/<your-github-username>/README.md`. Include notes, screenshots, and any producer/consumer code you wrote.
+Copy `submissions/week-02/TEMPLATE.md` to `submissions/week-02/<your-github-username>/README.md` and open a pull request.

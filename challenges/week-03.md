@@ -1,19 +1,27 @@
-# Week 3 — RabbitMQ
+# Week 3 — Apache Kafka
 
-Take the Kafka program from Week 2 and replace Kafka with RabbitMQ. Same `EngineeringQuestionSubmitted` event.
-
-The point is the question: why would I choose Kafka here instead of RabbitMQ?
+Producers write events to topics. Consumers read those events. Brokers retain events so they can be replayed.
 
 ## Required exercise
 
-Python producer → RabbitMQ → Python worker. Same event as Week 2.
+Start Kafka (Docker is recommended), create a topic, send messages, consume them, stop the consumer, produce additional messages, restart the consumer, and observe what happens.
 
-```bash
-docker compose --profile rabbitmq up
+Event:
+
+```json
+{
+  "eventType": "EngineeringQuestionSubmitted",
+  "question": "What does this error mean?",
+  "timestamp": "..."
+}
 ```
 
-Management UI defaults to http://localhost:15672 (guest / guest on a local compose stack).
+Local broker:
+
+```bash
+docker compose --profile kafka up
+```
 
 ## Submit
 
-Copy `submissions/week-03/TEMPLATE.md` to `submissions/week-03/<your-github-username>/README.md`.
+Copy `submissions/week-03/TEMPLATE.md` to `submissions/week-03/<your-github-username>/README.md`. Include notes, screenshots, and any producer/consumer code you wrote.

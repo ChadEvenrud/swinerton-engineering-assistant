@@ -1,6 +1,6 @@
 # Week 5 — GitHub Actions Fundamentals
 
-Workflows are YAML jobs and steps that respond to repository events.
+You already open pull requests. This week the pull request should also run a workflow.
 
 ## Assignment
 

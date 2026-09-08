@@ -8,10 +8,10 @@ body:
     attributes:
       label: Week
       options:
-        - Week 1 — Messaging fundamentals
-        - Week 2 — Kafka
-        - Week 3 — RabbitMQ
-        - Week 4 — Kafka vs RabbitMQ
+        - Week 1 — GitHub fundamentals
+        - Week 2 — Messaging fundamentals
+        - Week 3 — Kafka
+        - Week 4 — RabbitMQ and broker choice
         - Week 5 — GitHub Actions
         - Week 6 — CI/CD
     validations:

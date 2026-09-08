@@ -1,14 +1,18 @@
-# Week 1 — Messaging Fundamentals
+# Week 1 — GitHub Fundamentals
 
 - **Name:**
 - **GitHub username:**
 
-## Architecture sketch
+## What I did
 
-Describe or attach a diagram of Application A, the broker, Consumer A, and Consumer B.
+Clone, branch name, commit message, and the pull request URL.
 
-## If Consumer B is unavailable
+## Commands or GitHub Desktop
 
-What happens to the message? What happens when Consumer B comes back?
+Paste the commands you used, or describe the Desktop clicks that mapped to clone / branch / commit / push / pull request.
+
+## Pull request I reviewed
+
+Whose PR did you review, and what did you look for?
 
 ## What I learned

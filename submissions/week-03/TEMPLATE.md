@@ -1,20 +1,22 @@
-# Week 3 — RabbitMQ
+# Week 3 — Apache Kafka
 
 - **Name:**
 - **GitHub username:**
 
 ## What I ran
 
-How I started RabbitMQ and the queue / exchange I used.
+How I started Kafka, the topic name, and the commands or programs I used.
 
-## Same event on a different broker
+## Produce and consume
 
-What stayed the same as Week 2? What had to change?
+What I sent, and what the consumer received.
 
-## Why Kafka or RabbitMQ here?
+## Stop, produce more, restart
 
-A first take. Week 4 asks you to defend a choice.
+What happened to the messages produced while the consumer was down?
 
 ## Code or screenshots
+
+Link files in this folder or paste short snippets.
 
 ## What I learned
