@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Hub · Swinerton Engineering Assistant</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <meta name="description" content="Collaborative workspace for the Swinerton Engineering Hackathon team. Build the Engineering Assistant together and submit weekly challenges." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="starfield"></canvas>
+  <div class="nebula"></div>
+  <div class="grain"></div>
+  <div class="site">
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 14.5V6.8A2.8 2.8 0 0 1 6.8 4h10.4A2.8 2.8 0 0 1 20 6.8v7.7M4 14.5 12 20l8-5.5M4 14.5l8-4.2 8 4.2" stroke="#a8e4ff" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10.2" r="1.4" fill="#5ee7ff"/></svg>
+          </span>
+          <span class="brand-copy">
+            <strong>Swinerton</strong>
+            <span>Team Build</span>
+          </span>
+        </a>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html" class="active">Home</a>
+          <a href="build.html">The Build</a>
+          <a href="challenges.html">Challenges</a>
+          <a href="submit.html">Submit</a>
+          <a href="https://chadevenrud.github.io/swinerton-engineering-hackathon/" target="_blank" rel="noopener">Curriculum</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap">
+        <div class="eyebrow">Hackathon #1 · Team workspace</div>
+        <h1>Build it <span class="gradient-text">together</span></h1>
+        <p class="lede">This is the shared GitHub home for the Engineering Assistant. The team ships the app on branches and pull requests. Weekly labs land in the same repo so everyone can see the work.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/ChadEvenrud/swinerton-engineering-assistant">Open the repo</a>
+          <a class="btn ghost" href="submit.html">Submit a weekly challenge</a>
+        </div>
+      </section>
+
+      <section class="section wrap" id="tracks">
+        <div class="section-head">
+          <div class="kicker">Two tracks. One repo.</div>
+          <h2>How this workspace is used</h2>
+        </div>
+        <div class="tiles">
+          <a class="tile" href="build.html">
+            <span class="glow-blob"></span>
+            <h3>The product</h3>
+            <p>Frontend, backend, broker, and AI worker. Feature branches, reviews, and merges into main.</p>
+            <span class="more">Open the build →</span>
+          </a>
+          <a class="tile" href="challenges.html">
+            <span class="glow-blob"></span>
+            <h3>Weekly challenges</h3>
+            <p>Six labs from messaging through GitHub Actions. Each person submits their own folder through a pull request.</p>
+            <span class="more">See the weeks →</span>
+          </a>
+          <a class="tile" href="submit.html">
+            <span class="glow-blob"></span>
+            <h3>How to contribute</h3>
+            <p>Never push to main. Branch, add your files, open a PR, and get a teammate to review it.</p>
+            <span class="more">Submission steps →</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section wrap">
+        <article class="panel">
+          <h3>Get onto the repo</h3>
+          <ol class="objectives">
+            <li>Create a GitHub account if you do not have one.</li>
+            <li>Send your GitHub username to a repo admin so you can be added as a collaborator.</li>
+            <li>Clone the repo and work on a branch named after you and the work, for example <code>challenge/week-01-yourname</code> or <code>feature/question-form</code>.</li>
+            <li>Open a pull request. That is the hand-in.</li>
+          </ol>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer wrap">
+      <div>Swinerton Engineering Hackathon #1 · Team build</div>
+      <div>Branches. Pull requests. No secrets in source.</div>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

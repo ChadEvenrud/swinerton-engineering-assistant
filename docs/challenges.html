@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weekly Challenges · Swinerton Engineering Assistant</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+  <div class="nebula"></div>
+  <div class="grain"></div>
+  <div class="site">
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14.5V6.8A2.8 2.8 0 0 1 6.8 4h10.4A2.8 2.8 0 0 1 20 6.8v7.7M4 14.5 12 20l8-5.5M4 14.5l8-4.2 8 4.2" stroke="#a8e4ff" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10.2" r="1.4" fill="#5ee7ff"/></svg></span>
+          <span class="brand-copy"><strong>Swinerton</strong><span>Team Build</span></span>
+        </a>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="build.html">The Build</a>
+          <a href="challenges.html" class="active">Challenges</a>
+          <a href="submit.html">Submit</a>
+          <a href="https://chadevenrud.github.io/swinerton-engineering-hackathon/" target="_blank" rel="noopener">Curriculum</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="page-hero">
+        <div class="eyebrow">Six weeks</div>
+        <h1>Weekly <span class="gradient-text">challenges</span></h1>
+        <p class="lede">Everyone completes the lab, then opens a pull request that adds their work under <code>submissions/week-NN/your-github-username/</code>. Copy the template in that week’s folder. Full briefs live in <code>challenges/</code> in the repo.</p>
+        <div class="actions">
+          <a class="btn primary" href="submit.html">How to submit</a>
+          <a class="btn ghost" href="https://github.com/ChadEvenrud/swinerton-engineering-assistant/tree/main/submissions">View submissions</a>
+        </div>
+      </section>
+
+      <section class="section tight">
+        <div class="weeks">
+          <article class="week" id="week-01">
+            <div class="week-label">Week 1</div>
+            <div>
+              <h3>Messaging Fundamentals</h3>
+              <p>Draw the producer → broker → two consumers picture. Answer: what happens if Consumer B is unavailable when the producer sends the message?</p>
+            </div>
+          </article>
+          <article class="week" id="week-02">
+            <div class="week-label">Week 2</div>
+            <div>
+              <h3>Apache Kafka</h3>
+              <p>Run Kafka locally. Produce and consume an <code>EngineeringQuestionSubmitted</code> event. Stop the consumer, produce more messages, restart, and write what you observed.</p>
+            </div>
+          </article>
+          <article class="week" id="week-03">
+            <div class="week-label">Week 3</div>
+            <div>
+              <h3>RabbitMQ</h3>
+              <p>Repeat the Week 2 exercise on RabbitMQ. Same event. The point is the comparison, not a second API to memorize.</p>
+            </div>
+          </article>
+          <article class="week" id="week-04">
+            <div class="week-label">Week 4</div>
+            <div>
+              <h3>Kafka vs RabbitMQ</h3>
+              <p>Choose a broker for (1) an ERP employee-update event with five consumers, and (2) a document handed to one available AI worker. Explain why.</p>
+            </div>
+          </article>
+          <article class="week" id="week-05">
+            <div class="week-label">Week 5</div>
+            <div>
+              <h3>GitHub Actions fundamentals</h3>
+              <p>Describe a first PR pipeline: checkout, install, test, build. Include the YAML you tried, or a screenshot of a green workflow run.</p>
+            </div>
+          </article>
+          <article class="week" id="week-06">
+            <div class="week-label">Week 6</div>
+            <div>
+              <h3>CI/CD and secrets</h3>
+              <p>Show a fuller pipeline (lint, tests, builds). Confirm no API keys live in source. Secrets belong in GitHub Actions secrets.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer wrap">
+      <div>Swinerton Engineering Hackathon #1 · Team build</div>
+      <div><a href="submit.html">Submit your week →</a></div>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

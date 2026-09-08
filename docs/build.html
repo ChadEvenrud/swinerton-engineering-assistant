@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Build · Swinerton Engineering Assistant</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+  <div class="nebula"></div>
+  <div class="grain"></div>
+  <div class="site">
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14.5V6.8A2.8 2.8 0 0 1 6.8 4h10.4A2.8 2.8 0 0 1 20 6.8v7.7M4 14.5 12 20l8-5.5M4 14.5l8-4.2 8 4.2" stroke="#a8e4ff" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10.2" r="1.4" fill="#5ee7ff"/></svg></span>
+          <span class="brand-copy"><strong>Swinerton</strong><span>Team Build</span></span>
+        </a>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="build.html" class="active">The Build</a>
+          <a href="challenges.html">Challenges</a>
+          <a href="submit.html">Submit</a>
+          <a href="https://chadevenrud.github.io/swinerton-engineering-hackathon/" target="_blank" rel="noopener">Curriculum</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="page-hero">
+        <div class="eyebrow">The product</div>
+        <h1>Engineering <span class="gradient-text">Assistant</span></h1>
+        <p class="lede">An engineer submits a question. The backend publishes an event. Kafka or RabbitMQ holds it. An AI worker consumes it and the answer comes back to the UI. The request is asynchronous. The agent stays simple.</p>
+      </section>
+
+      <section class="section tight stack">
+        <article class="panel">
+          <h3>Target flow</h3>
+          <pre class="code">User → Frontend → Backend API → Kafka / RabbitMQ → Agent worker → Backend → Frontend</pre>
+        </article>
+        <article class="panel">
+          <h3>Where the code lives</h3>
+          <pre class="code">frontend/     Question form + result view
+backend/      REST API, event producer, result endpoint
+agent/        Consumer + AI worker
+messaging/    Event schema and broker helpers
+tests/        Automated tests
+docs/         This site + architecture notes
+challenges/   Weekly assignment briefs
+submissions/  Individual weekly hand-ins</pre>
+        </article>
+        <article class="panel">
+          <h3>Local brokers</h3>
+          <pre class="code">docker compose --profile kafka up
+docker compose --profile rabbitmq up</pre>
+          <p>Pick one broker for the final build in Week 4. Copy <code>.env.example</code> to <code>.env</code>. Never commit API keys.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer wrap">
+      <div>Swinerton Engineering Hackathon #1 · Team build</div>
+      <div><a href="challenges.html">Weekly challenges →</a></div>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

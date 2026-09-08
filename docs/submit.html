@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit · Swinerton Engineering Assistant</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+  <div class="nebula"></div>
+  <div class="grain"></div>
+  <div class="site">
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14.5V6.8A2.8 2.8 0 0 1 6.8 4h10.4A2.8 2.8 0 0 1 20 6.8v7.7M4 14.5 12 20l8-5.5M4 14.5l8-4.2 8 4.2" stroke="#a8e4ff" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10.2" r="1.4" fill="#5ee7ff"/></svg></span>
+          <span class="brand-copy"><strong>Swinerton</strong><span>Team Build</span></span>
+        </a>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="build.html">The Build</a>
+          <a href="challenges.html">Challenges</a>
+          <a href="submit.html" class="active">Submit</a>
+          <a href="https://chadevenrud.github.io/swinerton-engineering-hackathon/" target="_blank" rel="noopener">Curriculum</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="page-hero">
+        <div class="eyebrow">Pull requests are the hand-in</div>
+        <h1>Submit your <span class="gradient-text">week</span></h1>
+        <p class="lede">Do not push to <code>main</code>. Your weekly challenge is a branch plus a pull request that adds one folder with your GitHub username.</p>
+      </section>
+
+      <section class="section tight stack">
+        <article class="panel">
+          <h3>Folder to add</h3>
+          <pre class="code">submissions/week-01/your-github-username/
+  README.md          ← required, start from TEMPLATE.md
+  notes.png          ← optional diagram or screenshot
+  producer.py       ← optional code from the lab</pre>
+        </article>
+        <article class="panel">
+          <h3>Commands</h3>
+          <pre class="code">git clone https://github.com/ChadEvenrud/swinerton-engineering-assistant.git
+cd swinerton-engineering-assistant
+git checkout -b challenge/week-01-yourname
+
+# copy the template, then write your answers
+# submissions/week-01/TEMPLATE.md
+# → submissions/week-01/your-github-username/README.md
+
+git add submissions/week-01/your-github-username
+git commit -m "Submit week 1 challenge"
+git push -u origin challenge/week-01-yourname</pre>
+          <p>Then open a pull request on GitHub. Title it <code>Week 1: yourname</code>. Ask a teammate to review. After it is merged, your work is in the shared repo.</p>
+        </article>
+        <article class="panel">
+          <h3>Product work uses the same rule</h3>
+          <p>App changes go on <code>feature/...</code> branches against <code>frontend/</code>, <code>backend/</code>, <code>agent/</code>, <code>messaging/</code>, or <code>tests/</code>. Same review path. Secrets never go in the commit.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer wrap">
+      <div>Swinerton Engineering Hackathon #1 · Team build</div>
+      <div><a href="https://github.com/ChadEvenrud/swinerton-engineering-assistant/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a></div>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

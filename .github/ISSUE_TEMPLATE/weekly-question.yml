@@ -1,0 +1,25 @@
+name: Weekly challenge question
+description: Ask the team about a weekly lab without submitting the hand-in yet.
+title: "[Week N] "
+labels: ["challenge"]
+body:
+  - type: dropdown
+    id: week
+    attributes:
+      label: Week
+      options:
+        - Week 1 — Messaging fundamentals
+        - Week 2 — Kafka
+        - Week 3 — RabbitMQ
+        - Week 4 — Kafka vs RabbitMQ
+        - Week 5 — GitHub Actions
+        - Week 6 — CI/CD
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Use a pull request under submissions/ for the actual hand-in. This issue is for discussion.
+    validations:
+      required: true
